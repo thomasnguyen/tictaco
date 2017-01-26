@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TicTaco</title>
+    <meta name="description" content="Nacho typical tic-tac-toes game">
+    <link id="favicon" rel="icon" href="https://cdn.gomix.com/e9221aec-66d0-420b-9c00-3acd92a92731%2F1f32e.png" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+  
+    <div class = "splash">
+      <div class = "container">
+        <h1 class = "logo">Tic<span class = "logo-green">Taco</span></h1>
+        <p class = "description">Nacho typical tic-tac-toes game</p>
+        
+        <img src="https://cdn.gomix.com/e9221aec-66d0-420b-9c00-3acd92a92731%2F1f32e%20(2).svg" alt="TicTaco Logo" 
+            class = "splash-logo animated tada infinite">
+        
+        <div class = "splash-bottom">
+          <div class = "gamemode">
+            <p><strong>Choose a game mode:</strong></p>
+            <div class = "gamemode-container">
+              <div class = "options" id = "one_player">
+                <img src="https://cdn.gomix.com/e9221aec-66d0-420b-9c00-3acd92a92731%2F1f939-1f3fc.png" alt="TicTaco Logo" 
+                      height = 30 width = 30>
+                <div class = "options-text1">VS A.I.</div>
+              </div>
+              <div class = "options" id = "two_player">
+                  <img src="https://cdn.gomix.com/e9221aec-66d0-420b-9c00-3acd92a92731%2F1f93c-1f3fc.png" alt="TicTaco Logo" 
+                      height = 30 width = 30>
+                  <div class = "options-text2">2-Player</div>
+              </div>
+            </div>
+          </div>
+          <button class = "start" disabled>Start Game</button>
+        </div>
+      </div>
+    </div>
+    <header>
+      <div class = "container">
+        <div class = "nav-flex">
+          <div class = "back">
+            <img src="https://cdn.gomix.com/e9221aec-66d0-420b-9c00-3acd92a92731%2Fic_arrow_back_white_24px.svg" alt="TicTaco Logo" 
+            width = 25px height = 25px>
+          </div>
+          <h1 class = "logo-game">TicTaco</h1>
+          <div class = "mode">Spicy.ai</div>
+        </div>
+      </div>
+    </header>
+    <div class = "board">
+          <div class = "squares " id = "0"></div>
+          <div class = "squares " id = "1"></div>
+          <div class = "squares " id = "2"></div>
+          <div class = "squares" id = "3"></div>
+          <div class = "squares" id = "4"></div>
+          <div class = "squares" id = "5"></div>
+          <div class = "squares" id = "6"></div>
+          <div class = "squares" id = "7"></div>
+          <div class = "squares" id = "8"></div>
+    </div>
+    <div class = "status">
+      <div class = "status-text">
+        <img src="https://cdn.gomix.com/e9221aec-66d0-420b-9c00-3acd92a92731%2F1f32e%20(2).svg" alt="TicTaco Logo" 
+              class = "status-turn">
+      </div>
+    </div>
+    
+    
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+              integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+              crossorigin="anonymous"></script>
+              
+    <script src="/ai.js"></script>
+    <script src="/view.js"></script>
+    <script src="/model.js"></script>
+    <script src="/controller.js"></script>
+
+  </body>
+</html>
